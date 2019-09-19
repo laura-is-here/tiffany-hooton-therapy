@@ -565,7 +565,7 @@ nav {
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav-content a:hover, .dropdown:hover .dropbtn {
  transform: scale(1.25);
  color: #ecf0f1;
 }
@@ -747,7 +747,7 @@ input[type=submit]:hover {
 }
 @media only screen and (min-width: 770px) {
   header {
-    height: 50vh;
+    height: 65vh;
   }
   .topnav-content {
       display: block;
