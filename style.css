@@ -747,7 +747,7 @@ input[type=submit]:hover {
 }
 @media only screen and (min-width: 770px) {
   header {
-    height: 65vh;
+    height: 75vh;
   }
   .topnav-content {
       display: block;
