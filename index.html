@@ -18,13 +18,14 @@
   <link href="tifflogo.png" rel="shortcut icon" type="image/ico">
   
   <link href="https://tiffanyhootontherapy.neocities.org" rel="canonical">
+  <script src='menutoggle.js' defer></script>
 </head>
 
 <body>
   <nav>
     <div class="topnav" >
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()" descriptor="Show the navigation menu">&#9776;</a>
-      <div class="topnav-content responsive" id="myTopnav">
+      <a href="#" class="icon" descriptor="Show the navigation menu">&#9776;</a>
+      <div class="topnav-content responsive">
         <a href="#content" class="active" id="skipnav" description="Skip to main content">Home</a>
         <a href="about-me.html#content">About Me</a>
         <a href="services.html#content">Services</a>
@@ -126,17 +127,6 @@
       <h2>&copy; 2019 Tiffany Hooton</h2>
     </div>
   </footer>
-  <script>
-    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav-content") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav-content";
-      }
-    }
-  </script>
 </body>
 
 </html>
