@@ -376,7 +376,7 @@ header {
     /*background-color: #8e44ad;*/
     height: 100vh;
     color: #ecf0f1;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -398,6 +398,7 @@ header {
     margin: 0 auto;
     padding: 10px 5px;
     line-height: 1;
+    letter-spacing: 3px;
     font-family: Poppins, Arial, sans-serif;
     -webkit-animation: fadeIn 3s ease-out;
             animation: fadeIn 3s ease-out;
