@@ -567,7 +567,6 @@ nav {
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav-content a:hover, .dropdown:hover .dropbtn {
- transform: scale(1.25);
  color: #ecf0f1;
 }
 
