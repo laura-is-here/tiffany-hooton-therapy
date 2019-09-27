@@ -678,7 +678,7 @@ div.card {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  background-color: #16a085/*rgba(13, 190, 152, 1)*/;
+  background-color: #10ac84/*rgba(13, 190, 152, 1)*/;
   -webkit-box-shadow: 1px 4px 8px rgba(0,0,0,0.35);
           box-shadow: 1px 4px 8px rgba(0,0,0,0.35);
 }
@@ -705,7 +705,7 @@ input[type=submit]:hover {
 }*/
 .canvas-footer {
   font-size: 0.9rem;
-  background-color: #e67e22;
+  background-color: #ff9f43;
   text-align: center;
   margin: 0 auto;
   padding: 10px;
