@@ -387,8 +387,8 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-animation: blur 3s;
-            animation: blur 3s;
+    /*-webkit-animation: blur 3s;
+            animation: blur 3s;*/
 }
 .site-title {
     font-size: 3.5rem;
@@ -400,8 +400,8 @@ header {
     line-height: 1;
     letter-spacing: 3px;
     font-family: Poppins, Arial, sans-serif;
-    -webkit-animation: fadeIn 3s ease-out;
-            animation: fadeIn 3s ease-out;
+    /*-webkit-animation: fadeIn 3s ease-out;
+            animation: fadeIn 3s ease-out;*/
 }
 hr {
   border: 1px solid #ecf0f1;
@@ -507,7 +507,7 @@ nav {
 .topnav a {
   transition: 0.5s;
     display: block;
-    color: #ecf0f1;
+    color: rgb(196, 200, 201);
     text-align: center;
     text-decoration: none;
     font-size: 2.3rem;
@@ -678,7 +678,7 @@ div.card {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  background-color: rgba(29, 122, 115, 0.65);
+  background-color: #16a085/*rgba(13, 190, 152, 1)*/;
   -webkit-box-shadow: 1px 4px 8px rgba(0,0,0,0.35);
           box-shadow: 1px 4px 8px rgba(0,0,0,0.35);
 }
@@ -705,7 +705,7 @@ input[type=submit]:hover {
 }*/
 .canvas-footer {
   font-size: 0.9rem;
-  background-color: #D5A078;
+  background-color: #e67e22;
   text-align: center;
   margin: 0 auto;
   padding: 10px;
