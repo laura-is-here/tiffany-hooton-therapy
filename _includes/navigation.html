@@ -5,9 +5,9 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-0">
+        <ul class="navbar-nav mr-0">
         {% for item in site.data.navigation %}
-            <li class="nav-item{% if page.url == item.link %} active{% endif %}">
+            <li class="responsive-font-2 nav-item{% if page.url == item.link %} active{% endif %}">
                 <a class="nav-link" href="#{{ item.link }}">
                     {{ item.name }}{% if page.url == item.link %}<span class="sr-only">(current)</span>{% endif %}
                 </a>

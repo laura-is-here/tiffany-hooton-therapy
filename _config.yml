@@ -1,6 +1,6 @@
 exclude: [] 
 
-include: [node_modules]      
+include: [node_modules, .surgeignore]      
 sass:
     load_paths:
         - _sass

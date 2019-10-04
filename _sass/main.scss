@@ -1,5 +1,6 @@
 @import "variables";
 @import "bootstrap/scss/bootstrap";
+
 .opacity-0 {
     opacity: 0;
 }
@@ -21,12 +22,30 @@
 .color-primary {
     color: $primary;
 }
+.responsive-font-1 {
+    font-size: 1vmax;
+}
+.responsive-font-2 {
+    font-size: 2vmax;
+}
+.responsive-font-2-5 {
+    font-size: 2.5vmax;
+}
+.responsive-font-3 {
+    font-size: 3vmax;
+}
+.responsive-font-3-5 {
+    font-size: 3.5vmax;
+}
+.responsive-font-4 {
+    font-size: 4vmax;
+}
 .banner-main {
     background-color: rgba(29, 122, 115, 0.65);
     background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(240, 0%, 0%, 0.25)), to(hsla(240, 0%, 0%, 0.1))),url("/assets/images/sunrise.jpg");
     background-image: -o-linear-gradient(hsla(240, 0%, 0%, 0.25), hsla(240, 0%, 0%, 0.1)),url("/assets/images/sunrise.jpg");
     background-image: linear-gradient(hsla(240, 0%, 0%, 0.25), hsla(240, 0%, 0%, 0.1)),url("/assets/images/sunrise.jpg");
-    height: 60vh;
+    height: 70vh;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 15px;
 }
 
 /* The dots/bullets/indicators */
@@ -137,4 +156,37 @@ h1, h2, h3, h4, h5, h6 {
   from {opacity: .4}
   to {opacity: 1}
 }
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
 
+// Small devices (landscape phones, 576px and up)
+/*@media (min-width: 576px) { 
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+*/
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .responsive-font-1 {
+        font-size: 1vmin;
+    }
+    .responsive-font-2 {
+        font-size: 2vmin;
+    }
+    .responsive-font-2-5 {
+        font-size: 2.5vmin;
+    }
+    .responsive-font-3 {
+        font-size: 3vmin;
+    }
+    .responsive-font-3-5 {
+        font-size: 3.5vmin;
+    }
+    .responsive-font-4 {
+        font-size: 4vmin;
+    }
+}
