@@ -68,10 +68,10 @@
 }
 .about-banner {
     background-color: $primary;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(240, 0%, 0%, 0.45)), to(hsla(240, 0%, 0%, 0.2))),url("https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=645&q=80");
-    background-image: -o-linear-gradient(hsla(240, 0%, 0%, 0.45), hsla(240, 0%, 0%, 0.2)),url("https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=645&q=80");
-    background-image: linear-gradient(hsla(240, 0%, 0%, 0.75), hsla(240, 0%, 0%, 0.4)),url("https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=645&q=80");
-    background-position: bottom;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(240, 0%, 0%, 0.45)), to(hsla(240, 0%, 0%, 0.2))),url("https://images.unsplash.com/photo-1486728297118-82a07bc48a28?ixlib=rb-1.2.1&auto=format&fit=crop&w=1401&q=80");
+    background-image: -o-linear-gradient(hsla(240, 0%, 0%, 0.45), hsla(240, 0%, 0%, 0.2)),url("https://images.unsplash.com/photo-1486728297118-82a07bc48a28?ixlib=rb-1.2.1&auto=format&fit=crop&w=1401&q=80");
+    background-image: linear-gradient(hsla(240, 0%, 0%, 0.75), hsla(240, 0%, 0%, 0.4)),url("https://images.unsplash.com/photo-1486728297118-82a07bc48a28?ixlib=rb-1.2.1&auto=format&fit=crop&w=1401&q=80");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -88,6 +88,15 @@ body {
 
 .color-primary {
     color: $primary;
+}
+.bg-accent {
+    background-color: $accent;
+}
+.color-accent {
+    color: $accent;
+}
+.bg-primary-light {
+    background-color: $light-pink;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Staatliches, sans-serif;
@@ -133,6 +142,10 @@ h1, h2, h3, h4, h5, h6 {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
