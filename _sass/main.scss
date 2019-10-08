@@ -39,29 +39,29 @@
     color: $primary;
 }
 .responsive-font-1 {
-    font-size: 1vmax;
+    font-size: 1rem * 0.7;
 }
 .responsive-font-2 {
-    font-size: 2vmax;
+    font-size: 1.2rem * 0.7;
 }
 .responsive-font-2-5 {
-    font-size: 2.5vmax;
+    font-size: 1.4rem * 0.7;
 }
 .responsive-font-3 {
-    font-size: 3vmax;
+    font-size: 1.6rem * 0.7;
 }
 .responsive-font-3-5 {
-    font-size: 3.5vmax;
+    font-size: 1.8rem * 0.7;
 }
 .responsive-font-4 {
-    font-size: 4vmax;
+    font-size: 2rem * 0.7;
 }
 .banner-main {
     background-color: $primary; 
     background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(240, 0%, 0%, 0.25)), to(hsla(240, 0%, 0%, 0.1))),url("https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
     background-image: -o-linear-gradient(hsla(240, 0%, 0%, 0.25), hsla(240, 0%, 0%, 0.1)),url("https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
     background-image: linear-gradient(hsla(240, 0%, 0%, 0.25), hsla(240, 0%, 0%, 0.1)),url("https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
-    height: 70vh;
+    height: 100vh;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,31 +205,90 @@ h1, h2, h3, h4, h5, h6 {
 // Small devices (landscape phones, 576px and up)
 /*@media (min-width: 576px) { 
 }
+*/
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-*/
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
+@media (min-width: 768px) { 
     .responsive-font-1 {
-        font-size: 1vmin;
+        font-size: 1rem * 0.9;
     }
     .responsive-font-2 {
-        font-size: 2vmin;
+        font-size: 1.2rem * 0.9;
     }
     .responsive-font-2-5 {
-        font-size: 2.5vmin;
+        font-size: 1.4rem * 0.9;
     }
     .responsive-font-3 {
-        font-size: 3vmin;
+        font-size: 1.6rem * 0.9;
     }
     .responsive-font-3-5 {
-        font-size: 3.5vmin;
+        font-size: 1.8rem * 0.9;
     }
     .responsive-font-4 {
-        font-size: 4vmin;
+        font-size: 2rem * 0.9;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .responsive-font-1 {
+        font-size: 1rem;
+    }
+    .responsive-font-2 {
+        font-size: 1.2rem;
+    }
+    .responsive-font-2-5 {
+        font-size: 1.4rem;
+    }
+    .responsive-font-3 {
+        font-size: 1.6rem;
+    }
+    .responsive-font-3-5 {
+        font-size: 1.8rem;
+    }
+    .responsive-font-4 {
+        font-size: 2rem;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1368px) { 
+    .responsive-font-1 {
+        font-size: 1rem * 1.1;
+    }
+    .responsive-font-2 {
+        font-size: 1.2rem * 1.1;
+    }
+    .responsive-font-2-5 {
+        font-size: 1.4rem * 1.1;
+    }
+    .responsive-font-3 {
+        font-size: 1.6rem * 1.1;
+    }
+    .responsive-font-3-5 {
+        font-size: 1.8rem * 1.1;
+    }
+    .responsive-font-4 {
+        font-size: 2rem * 1.1;
+    }
+}
+@media (min-width: 2560px) { 
+    .responsive-font-1 {
+        font-size: 1rem * 1.5;
+    }
+    .responsive-font-2 {
+        font-size: 1.2rem * 1.5;
+    }
+    .responsive-font-2-5 {
+        font-size: 1.4rem * 1.5;
+    }
+    .responsive-font-3 {
+        font-size: 1.6rem * 1.5;
+    }
+    .responsive-font-3-5 {
+        font-size: 1.8rem * 1.5;
+    }
+    .responsive-font-4 {
+        font-size: 2rem * 1.5;
     }
 }
