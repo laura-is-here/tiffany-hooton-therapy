@@ -1,8 +1,10 @@
-style-old.css
+style-new.css
 _site/
 .sass-cache/
+.surgeignore
 .jekyll-cache/
 .jekyll-metadata
 /node_modules/
 Gemfile.lock
 package-lock.json
+

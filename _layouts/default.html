@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Lato|Poppins|Staatliches&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{ '/node_modules/@fortawesome/fontawesome-free/css/all.css' | prepend: site.baseurl }}">
         <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
         <meta name="keywords" content="therapy, Long Beach, LGBT, mental health">
         <meta name="description" content="Depressed, anxious or struggling? Learn more about person-centered, queer and gender affirming therapy in the Long Beach area.">
@@ -25,8 +24,12 @@
         {{ content }}
         {% include footer.html %}
         <script src="/assets/js/menutoggle.js"></script>
-        <script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
+        <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
+        <script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
+        <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+        <script src="{{'/assets/vendor/all.js' | prepend: site.baseurl}}"></script>
+        <!--<script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
         <script src="{{'/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.baseurl}}"></script>
-        <script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+        <script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>-->
     </body>
 </html>

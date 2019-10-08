@@ -1,5 +1,21 @@
 @import "variables";
-@import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/jumbotron";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/dropdown";
+//@import "bootstrap/scss/bootstrap";
 
 .opacity-0 {
     opacity: 0;
@@ -41,20 +57,20 @@
     font-size: 4vmax;
 }
 .banner-main {
-    background-color: rgba(29, 122, 115, 0.65);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(240, 0%, 0%, 0.25)), to(hsla(240, 0%, 0%, 0.1))),url("/assets/images/sunrise.jpg");
-    background-image: -o-linear-gradient(hsla(240, 0%, 0%, 0.25), hsla(240, 0%, 0%, 0.1)),url("/assets/images/sunrise.jpg");
-    background-image: linear-gradient(hsla(240, 0%, 0%, 0.25), hsla(240, 0%, 0%, 0.1)),url("/assets/images/sunrise.jpg");
+    background-color: $primary; 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(240, 0%, 0%, 0.25)), to(hsla(240, 0%, 0%, 0.1))),url("https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+    background-image: -o-linear-gradient(hsla(240, 0%, 0%, 0.25), hsla(240, 0%, 0%, 0.1)),url("https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+    background-image: linear-gradient(hsla(240, 0%, 0%, 0.25), hsla(240, 0%, 0%, 0.1)),url("https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
     height: 70vh;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .about-banner {
-    background-color: rgba(29, 122, 115, 0.65);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(240, 0%, 0%, 0.45)), to(hsla(240, 0%, 0%, 0.2))),url("sunrise.jpg");
-    background-image: -o-linear-gradient(hsla(240, 0%, 0%, 0.45), hsla(240, 0%, 0%, 0.2)),url("/assets/images/beautiful-cropland-dawn-1237119.jpg");
-    background-image: linear-gradient(hsla(240, 0%, 0%, 0.75), hsla(240, 0%, 0%, 0.4)),url("/assets/images/beautiful-cropland-dawn-1237119.jpg");
+    background-color: $primary;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(240, 0%, 0%, 0.45)), to(hsla(240, 0%, 0%, 0.2))),url("https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=645&q=80");
+    background-image: -o-linear-gradient(hsla(240, 0%, 0%, 0.45), hsla(240, 0%, 0%, 0.2)),url("https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=645&q=80");
+    background-image: linear-gradient(hsla(240, 0%, 0%, 0.75), hsla(240, 0%, 0%, 0.4)),url("https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=645&q=80");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,7 +82,13 @@ body {
     font-family: Poppins, sans-serif;
     transition: opacity 0.5s ease-in;
 }
+.poppins {
+    font-family: Poppins, sans-serif;
+}
 
+.color-primary {
+    color: $primary;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: Staatliches, sans-serif;
 }
@@ -81,6 +103,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  height: 300px;
+
+  @media screen and (min-width: 576px) {
+      height: 200px;
+  }
+
+  justify-content: center;
+  align-items: center;
 }
 
 /* Next & previous buttons */
@@ -140,20 +170,20 @@ h1, h2, h3, h4, h5, h6 {
 /* Fading animation */
 .slideFade {
   -webkit-animation-name: slideFade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.0s;
   -webkit-animation-timing-function: ease-in-out;
   animation-name: slideFade;
-  animation-duration: 1.5s;
+  animation-duration: 1.0s;
   animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes slideFade {
-  from {opacity: .4}
+  from {opacity: .1}
   to {opacity: 1}
 }
 
 @keyframes slideFade {
-  from {opacity: .4}
+  from {opacity: .1}
   to {opacity: 1}
 }
 // Extra small devices (portrait phones, less than 576px)
