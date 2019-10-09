@@ -1,5 +1,5 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-const navbarBrand = document.querySelector('.navbar-brand');
+/*const navbarBrand = document.querySelector('.navbar-brand');
 const navbarContent = document.querySelector('#navbarSupportedContent')
 const navbar = document.querySelector('#navbar');
 const menuToggler = document.querySelector('.navbar-toggler');
@@ -18,9 +18,9 @@ window.onscroll = function() {
 menuToggler.addEventListener('click', () => {
     siteTitle.classList.toggle('opacity-0');
     navbar.classList.toggle('bg-primary');
-    navbarBrand.classList.toggle('opacity-0');
+    navbarBrand.classList.toggle('opacity-90');
     navbarContent.classList.toggle('opacity-0');
-});
+});*/
 var slideIndex = 1;
 showSlides(slideIndex);
 
