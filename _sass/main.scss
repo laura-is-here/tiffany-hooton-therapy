@@ -2,6 +2,8 @@
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/close";
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/grid";
 @import "bootstrap/scss/buttons";
@@ -95,13 +97,20 @@ body {
 .color-accent {
     color: $accent;
 }
+.color-primary-light {
+    color: $light-pink;
+}
 .bg-primary-light {
     background-color: $light-pink;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Staatliches, sans-serif;
+    font-family: Poppins, sans-serif;
+    opacity: 0.9;
 }
 
+p {
+    opacity: 0.9;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -252,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1368px) { 
+/*@media (min-width: 1368px) { 
     .responsive-font-1 {
         font-size: 1rem * 1.1;
     }
@@ -271,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
     .responsive-font-4 {
         font-size: 2rem * 1.1;
     }
-}
+}*/
 @media (min-width: 2560px) { 
     .responsive-font-1 {
         font-size: 1rem * 1.5;

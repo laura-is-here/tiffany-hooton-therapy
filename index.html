@@ -15,9 +15,9 @@ layout: default
     <main id="services">
     <div class="jumbotron jumbotron-fluid bg-light m-0 p-3 p-md-5 text-black text-center">
         <div class="container responsive-font-2-5">
-            <h1 class="px-md-5 mx-md-5">Welcome!</h1>
-            <p class="px-md-5 mx-md-5">I am a Marriage and Family Therapist Associate offering therapy in the greater Long Beach area.</h2>
-            <p class="px-md-5 mx-md-5">If you are looking for a therapist who is queer, trans-affirming, and sex worker-allied, feel welcome to <a href="#contact">contact me</a> for a free consultation and we can begin the path of healing together.</p>
+            <h1 class="px-md-5 mx-md-5 opacity-90">Welcome!</h1>
+            <p class="px-md-5 mx-md-5 opacity-90">I am a Marriage and Family Therapist Associate offering therapy in the greater Long Beach area.</h2>
+            <p class="px-md-5 mx-md-5 opacity-90">If you are looking for a therapist who is queer, trans-affirming, and sex worker-allied, feel welcome to <a href="#contact">contact me</a> for a free consultation and we can begin the path of healing together.</p>
         </div>
     </div>
     <div class="container mx-auto my-5 responsive-font-2-5">
@@ -94,44 +94,79 @@ layout: default
             <p class="px-md-5 mx-md-5">
                 I aim to provide all of my clients with a warm, safe, and affirming space to explore their most authentic selves. In our society, trans and queer folx face numerous stressors that may leave them feeling that the systems in place have let them down. This translates to an accumulation of traumatic experiences and relational struggles that lead to feelings of shame, distrust, hurt, and anger. In therapy, I hope to help my clients overcome these feelings while building a sense of empowerment and authenticity, so they feel ready to build meaningful relationships with others and pursue their goals.
             </p>
+            <a href="https://www.psychologytoday.com/us/therapists/tiffany-hooton-long-beach-ca/703413?sid=5d9d09a0f10f3" target="_blank" class="btn btn-light m-3">View my Psychology Today profile</a>
         </div>
     </div>
-    <div id="contact" class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center m-0">
+    <div id="contact" class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center m-0 py-0">
         <div class="container m-3 p-3 responsive-font-2-5">
             <h2 class="px-md-5 mx-md-5 text-center">Need an appointment?</h2>
             <form class="px-md-5 mx-md-5" action="https://formspree.io/tiffanyhootontherapy@protonmail.com" method="POST">
                  <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="form-name" placeholder="Your Name">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
                 </div>
                  <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="form-email" name="_replyto" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="email" name="_replyto" placeholder="name@example.com">
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" class="form-control" id="form-number" name="phone" placeholder="111-222-3333">
+                    <input type="tel" class="form-control" id="number" name="phone" placeholder="111-222-3333">
                 </div>
                 <div class="form-group">
                     <label for="message">Include a brief message to Tiffany. Please do not include any protected health information.</label>
                     <textarea class="form-control" id="form-message" name="message" rows="5"></textarea>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <button type="submit" class="btn btn-primary m-3">Send</button>
+                    <button type="button" class="btn btn-light m-3" data-toggle="modal" data-target="#exampleModal">
+                        View my contact info 
+                    </button>
                 </div>
             </form>
-        </div>
-        <div class="container m-3 p-3 responsive-font-2-5 text-center">
-            <div>
-                <h3 class="px-md-5 mx-md-5">Associate Registration & Supervision</h3>
-                <p class="px-md-5 mx-md-5">AMFT #115397 | APCC #6793</p>
-                <p class="px-md-5 mx-md-5">Under the supervision of <a href="http://monicaprovence.com" target="_blank">Monica Provence</a>, LMFT #87245</p>
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title poppins" id="exampleModalLabel">Contact Information</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p> 
+                                Office:
+                                <a href="https://goo.gl/maps/Smyu8Z5PBsAWsyxy6" class="stetched-link">
+                                Pine Ave, #102, Long Beach, CA 90813</a>
+                            </p>
+                            <hr>
+                            <p>
+                                Phone: 
+                                <a href="tel:714-500-7756" class="stetched-link">714-500-7756</a>
+                            </p>
+                            <hr>
+                            <p>
+                                Email:
+                                <a class="stetched-link" href="mailto:tiffanyhootontherapy@protonmail.com">TiffanyHootonTherapy@protonmail.com</a>
+                            </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <a href="https://www.psychologytoday.com/us/therapists/tiffany-hooton-long-beach-ca/703413?sid=5d9d09a0f10f3" class="btn btn-primary">View my profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-3 py-0 responsive-font-2-5 text-center">
+                <div>
+                    <h3 class="px-md-5 mx-md-5">Associate Registration & Supervision</h3>
+                    <p class="px-md-5 mx-md-5">AMFT #115397 | APCC #6793<br>
+                    Under the supervision of <a href="http://monicaprovence.com" target="_blank">Monica Provence</a>, LMFT #87245</p>
+                </div>
             </div>
         </div>
-            <!--<p class="px-md-5 mx-md-5">Schedule a free consultation to find out if therapy with me is right for you.</p>
-            <p class="px-md-5 mx-md-5">Together, we can collaborate to foster personal growth and positive changes in behavior, mood, or outlook, as seen fit by you.</p>
-            <p class="px-md-5 mx-md-5">Click the button below to be redirected to my secure contact form (opens new page in new tab/window)</p>-->  
-        </div>
-      </div>
-    </div>
-  </main>
+    </main>
