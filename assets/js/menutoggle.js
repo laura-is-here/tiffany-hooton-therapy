@@ -6,9 +6,7 @@ const menuToggler = document.querySelector('.navbar-toggler');
 const siteTitle = document.querySelector('.site-title');
 
 window.onscroll = function() {
-  this.console.log(navbarBrand.classList);
-  this.console.log(navbarContent.classList);
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if ((document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) && (!navbarContent.classList.contains('show'))) {
     navbarBrand.classList.replace('opacity-90', 'opacity-0');
     navbarContent.classList.replace('opacity-90', 'opacity-0');
   } else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
