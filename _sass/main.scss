@@ -18,7 +18,9 @@
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/dropdown";
 //@import "bootstrap/scss/bootstrap";
-
+html {
+    scroll-behavior: smooth;
+}
 .opacity-0 {
     opacity: 0;
 }
