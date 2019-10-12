@@ -36,6 +36,9 @@ html {
 .opacity-90 {
     opacity: 0.9;
 }
+.opacity-100 {
+    opacity: 1;
+}
 .color-primary {
     color: $primary;
 }
@@ -96,6 +99,12 @@ body {
 .poppins {
     font-family: Poppins, sans-serif;
 }
+.text-dark-muted {
+    color: #353535;
+}
+.text-white-muted {
+    color: #D991AC;
+}
 
 .color-primary {
     color: $primary;
@@ -109,8 +118,14 @@ body {
 .color-primary-light {
     color: $light-pink;
 }
+.color-primary-muted {
+    color: $pink-muted;
+}
 .bg-primary-light {
     background-color: $light-pink;
+}
+.bg-light-transparent {
+    background-color: #ecf0f1cc;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Poppins, sans-serif;
