@@ -96,6 +96,18 @@ body {
 .card-round {
     border-radius: 20px; 
 }
+.hover-purple:link,
+.hover-purple:visited {
+    display: block;
+    color: #454545;
+    padding: 5px;
+}
+.hover-purple:hover,
+.hover-purple:focus,
+.hover-purple:active {
+    color: $primary;
+    text-decoration: none;
+}
 .icon-shadow {
     filter: drop-shadow(0px 1px 2px rgba(20,20,20,0.3));
 }

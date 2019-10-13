@@ -10,7 +10,7 @@
         <ul class="navbar-nav mx-auto">
         {% for item in site.data.navigation %}
             <li class="responsive-font-2 nav-item{% if page.url == item.link %} active{% endif %}">
-                <a class="nav-link" href="#{{ item.link }}">
+                <a class="hover-purple" href="#{{ item.link }}">
                     {{ item.name }}{% if page.url == item.link %}<span class="sr-only">(current)</span>{% endif %}
                 </a>
             </li>
