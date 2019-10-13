@@ -21,7 +21,7 @@ menuToggler.addEventListener('click', () => {
     navbarBrand.classList.toggle('opacity-90');
     navbarContent.classList.toggle('opacity-0');
 });*/
-var slideIndex = 1;
+/*var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -49,4 +49,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " current";
 }
-
+*/
