@@ -78,6 +78,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .not-found-banner {
     background-color: $primary;
@@ -126,11 +127,16 @@ body {
 .bg-light-transparent {
     background-color: #ecf0f1cc;
 }
+.bg-primary-muted {
+    background-color: $pink-muted;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: Poppins, sans-serif;
     opacity: 0.9;
 }
-
+.top {
+    z-index: 10;
+}
 p {
     opacity: 0.9;
 }

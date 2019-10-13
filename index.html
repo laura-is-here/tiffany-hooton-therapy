@@ -2,32 +2,33 @@
 title: Home | Tiffany Hooton Therapy
 layout: default
 ---
-    <main id="services">
+    <main>
     <div class="container rounded shadow-sm mt-n5 bg-light mx-auto p-3 p-md-5 text-black text-center">
         <div class="container responsive-font-2-5">
             <h1 class="px-md-5 mx-md-5">Welcome!</h1>
             <p class="px-md-5 mx-md-5 text-dark-muted">I am a Marriage and Family Therapist Associate offering therapy in the greater Long Beach area.</h2>
             <p class="px-md-5 mx-md-5 text-dark-muted">If you are looking for a therapist who is queer, trans-affirming, and sex worker-allied, feel welcome to <a href="#contact">contact me</a> for a free consultation and we can begin the path of healing together.</p>
         </div>
+        {% include navigation.html %}
     </div>
-    <div class="container mx-auto my-5 responsive-font-2-5">
+    <div id="services" class="container mx-auto mt-5 mb-n5 pb-5 responsive-font-2-5">
         <h1 class="text-center color-primary">My Services</h1>
-        <div class="row no-gutters d-flex align-items-center justify-content-center color-primary mx-md-5 px-md-5">
-            <div class="col-lg-4 text-center d-flex flex-column justify-content-center align-items-center p-0 my-2">
+        <div class="row no-gutters d-flex align-items-center justify-content-center color-primary mx-md-5 px-md-5 pb-5">
+            <div class="col-lg-4 text-center d-flex flex-column justify-content-center align-items-center px-0 my-2">
                 <div class="container d-flex justify-content-center align-items-center">
                     <i class="fas fa-user fa-4x px-3"></i>
                     <i class="fas fa-heart fa-4x px-3"></i>
                 </div>
                 <h2 class="p-3 poppins">Affirming & Humanistic Therapy</h2>
             </div>
-            <div class="col-lg-4 text-center d-flex flex-column justify-content-center align-items-center p-0 my-2">
+            <div class="col-lg-4 text-center d-flex flex-column justify-content-center align-items-center px-0 my-2">
                 <div class="container d-flex justify-content-center align-items-center">
                     <i class="fas fa-comments fa-4x px-3"></i>
                     <i class="fas fa-users fa-4x px-3"></i>
                 </div>
                 <h2 class="p-3 poppins">For Individuals, Couples, Families & Adolescents</h2>
             </div>
-            <div class="col-lg-4 text-center d-flex flex-column justify-content-center align-items-center p-0 my-2">
+            <div class="col-lg-4 text-center d-flex flex-column justify-content-center align-items-center px-0 my-2">
                 <div class="container d-flex justify-content-center align-items-center">
                     <i class="fas fa-rainbow fa-4x px-3"></i>
                     <i class="fas fa-transgender-alt fa-4x px-3"></i>
@@ -36,28 +37,31 @@ layout: default
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-primary d-flex justify-content-center align-items-center text-center">
-        <div class="container p-3 m-3 responsive-font-2-5">
-            <p class="px-md-5 mx-md-5 text-white">
-                My approach to therapy is humanistic, gender-affirming, and incorporates elements of cognitive therapy to challenge unhelpful or self-defeating thinking patterns.
-            </p>
-            <p class="px-md-5 mx-md-5 text-white">
-                My specialty areas include working with queer, trans, and nonbinary individuals and their partners as they navigate identity, transition, and relationship issues. <strong>We may work well together if you are:</strong>
-            </p>
+    <div class="container-fluid bg-primary d-flex justify-content-center align-items-center text-center mt-n5 mb-n5 pt-5 pb-5">
+        <div class="container px-3 mx-3 mt-n5 pb-2 responsive-font-2-5">
+            <div class="container rounded d-flex flex-column bg-light pt-5 mx-auto pb-2 mt-n5 text-dark-muted shadow-sm">
+                <h2 class="px-md-5 mx-md-5">What To Expect</h2> 
+                <p class="px-md-5 mx-md-5">
+                    My approach to therapy is humanistic, gender-affirming, and incorporates elements of cognitive therapy to challenge unhelpful or self-defeating thinking patterns.
+                </p>
+                <p class="px-md-5 mx-md-5">
+                    My specialty areas include working with queer, trans, and nonbinary individuals and their partners as they navigate identity, transition, and relationship issues. <strong>We may work well together if you are:</strong>
+                </p>
+            </div>
             <div class="slideshow-container pt-3">
-                <div class="mySlides bg-light slideFade p-3 mx-md-5">
+                <div class="mySlides bg-light slideFade p-3 mx-md-5 shadow-sm">
                     <div class="numbertext">1 / 3</div>
                     <p class="color-primary text-center font-weight-bold px-5">
                         A child, adolescent, or adult experiencing family conflict due to issues of past trauma, gender, or sexual orientation
                     </p>
                 </div>
-                <div class="mySlides bg-light slideFade p-3 mx-md-5">
+                <div class="mySlides bg-light slideFade p-3 mx-md-5 shadow-sm">
                     <div class="numbertext">2 / 3</div>
                     <p class="color-primary text-center font-weight-bold px-5">
                         A transgender person, partner of a transgender person, or couple where one or more people are under going a gender transition
                     </p>
                 </div>
-                <div class="mySlides bg-light slideFade p-3 mx-md-5">
+                <div class="mySlides bg-light slideFade p-3 mx-md-5 shadow-sm">
                     <div class="numbertext">3 / 3</div>
                     <p class="color-primary text-center font-weight-bold px-5">
                         A queer or trans couple experiencing relational issues.
@@ -72,7 +76,7 @@ layout: default
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-            <div class="container text-white">
+            <div class="container pb-2 text-white">
                 <h2 class="mx-md-5 px-md-5 ">
                     Fees
                 </h2>
@@ -80,10 +84,11 @@ layout: default
             </div>
         </div>
     </div>
-    <div id="about-me" class="about-banner jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center text-center m-0">
-        <div class="container m-3 p-3 responsive-font-2-5">
-            <div class="container rounded d-flex flex-column flex-md-row flex-md-nowrap bg-light pt-5 px-md-5 mx-md-5 pb-4 text-dark-muted text-left">
-                <div class="">
+    <div id="about-me" class="container-fluid rounded shadow-sm about-banner mx-auto px-3 pt-3 mb-n5 text-white">
+    <!--<div id="about-me" class="about-banner container text-white d-flex justify-content-center align-items-center text-center mx-0 mt-n5 pt-0 p-3 shadow-sm">-->
+        <div class="container mb-n5 mx-auto px-3 responsive-font-2-5">
+            <div class="top position-relative container rounded d-flex flex-column flex-md-row flex-md-nowrap bg-light pt-5 pb-5 mb-n5 mt-5 mx-auto text-dark-muted text-left">
+                <div class="pb-5 mb-n5">
                     <div class="row d-flex align-items-start">
                         <div class="col-md-8">
                             <h2 class="">About Me</h2>
@@ -96,6 +101,7 @@ layout: default
                         </div>
                         <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
                             <img src="/assets/images/tiff-image.jpeg" width="100%" class="rounded">
+                            <div class="shadow-in"></div>
                             <a href="https://www.psychologytoday.com/us/therapists/tiffany-hooton-long-beach-ca/703413?sid=5d9d09a0f10f3" target="_blank" rel="noreferrer" class="btn btn-primary m-3">View my Psychology Today profile</a>
                         </div>
                     </div>
@@ -103,83 +109,71 @@ layout: default
             </div>
         </div>
     </div>
-    <!--<div class="container-fluid bg-primary d-flex justify-content-center align-items-center text-left">
-        <div class="container p-3 m-3 responsive-font-2-5">
-            <div class="jumbotron d-flex flex-row flex-wrap flex-md-nowrap bg-light px-md-5 mx-md-5">
-            <p class="">
-                I aim to provide all of my clients with a warm, safe, and affirming space to explore their most authentic selves. In our society, trans and queer folx face numerous stressors that may leave them feeling that the systems in place have let them down. This translates to an accumulation of traumatic experiences and relational struggles that lead to feelings of shame, distrust, hurt, and anger. In therapy, I hope to help my clients overcome these feelings while building a sense of empowerment and authenticity, so they feel ready to build meaningful relationships with others and pursue their goals.
-            </p>
-            <div class="m-3">
-                <img src="https://cdn4.sussexdirectories.com/rms/rms_photos/sized/13/34/703413-1637133-3_320x400.jpg?pu=1570799295" width="100%" class="rounded">
-                <a href="https://www.psychologytoday.com/us/therapists/tiffany-hooton-long-beach-ca/703413?sid=5d9d09a0f10f3" target="_blank" rel="noreferrer" class="btn btn-primary m-3">View my Psychology Today profile</a>
-            </div>
+    <div id="contact" class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center mx-0 mb-0 mt-n5 pt-5 pb-0">
+        <div class="container mx-3 px-3 mt-n5 responsive-font-2-5">
+            <div class="pt-5">
+                <h2 class="pt-5 px-md-5 mx-md-5 text-center">Need an appointment?</h2>
+                <form class="px-md-5 mx-md-5" action="https://formspree.io/tiffanyhootontherapy@protonmail.com" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="_replyto" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="111-222-3333">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Include a brief message to Tiffany. Please do not include any protected health information.</label>
+                        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button type="submit" class="btn btn-primary m-3">Send</button>
+                        <button type="button" class="btn btn-light m-3" data-toggle="modal" data-target="#exampleModal">
+                            View my contact info 
+                        </button>
+                    </div>
+                </form>
+                <!-- Button trigger modal -->
 
-            </div>
-        </div>
-    </div>-->
-    <div id="contact" class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center m-0 py-0">
-        <div class="container m-3 p-3 responsive-font-2-5">
-            <h2 class="px-md-5 mx-md-5 text-center">Need an appointment?</h2>
-            <form class="px-md-5 mx-md-5" action="https://formspree.io/tiffanyhootontherapy@protonmail.com" method="POST">
-                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                </div>
-                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" name="_replyto" placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="111-222-3333">
-                </div>
-                <div class="form-group">
-                    <label for="message">Include a brief message to Tiffany. Please do not include any protected health information.</label>
-                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <button type="submit" class="btn btn-primary m-3">Send</button>
-                    <button type="button" class="btn btn-light m-3" data-toggle="modal" data-target="#exampleModal">
-                        View my contact info 
-                    </button>
-                </div>
-            </form>
-            <!-- Button trigger modal -->
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title poppins" id="exampleModalLabel">Contact Information</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body text-dark-muted">
-                            <p> 
-                                Office:
-                                <a href="https://goo.gl/maps/Smyu8Z5PBsAWsyxy6" rel="noreferrer" class="stetched-link">
-                                851 Pine Ave, #102, Long Beach, CA 90813</a>
-                            </p>
-                            <p>
-                                Phone: 
-                                <a href="tel:714-500-7756" class="stetched-link">714-500-7756</a>
-                            </p>
-                            <p>
-                                Email:
-                                <a class="stetched-link" href="mailto:tiffanyhootontherapy@protonmail.com">TiffanyHootonTherapy@protonmail.com</a>
-                            </p>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title poppins" id="exampleModalLabel">Contact Information</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <a href="https://www.psychologytoday.com/us/therapists/tiffany-hooton-long-beach-ca/703413?sid=5d9d09a0f10f3" rel="noreferrer" target="_blank" class="btn btn-primary">View my profile</a>
+                            <div class="modal-body text-dark-muted">
+                                <p> 
+                                    Office:
+                                    <a href="https://goo.gl/maps/Smyu8Z5PBsAWsyxy6" rel="noreferrer" class="stetched-link">
+                                    851 Pine Ave, #102, Long Beach, CA 90813</a>
+                                </p>
+                                <p>
+                                    Phone: 
+                                    <a href="tel:714-500-7756" class="stetched-link">714-500-7756</a>
+                                </p>
+                                <p>
+                                    Email:
+                                    <a class="stetched-link" href="mailto:tiffanyhootontherapy@protonmail.com">TiffanyHootonTherapy@protonmail.com</a>
+                                </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a href="https://www.psychologytoday.com/us/therapists/tiffany-hooton-long-beach-ca/703413?sid=5d9d09a0f10f3" rel="noreferrer" target="_blank" class="btn btn-primary">View my profile</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container px-3 py-0 responsive-font-2-5 text-center text-dark-muted">
+            <div class="container px-3 py-0 responsive-font-2-5 text-dark-muted">
                 <div>
                     <h3 class="px-md-5 mx-md-5">Associate Registration & Supervision</h3>
                     <p class="px-md-5 mx-md-5">AMFT #115397 | APCC #6793<br>
