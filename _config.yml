@@ -3,4 +3,6 @@ sass:
     load_paths:
         - _sass
         - node_modules
+plugins:
+    - jekyll-autoprefixer
 

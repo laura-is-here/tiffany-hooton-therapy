@@ -1,7 +1,7 @@
 SHELL := /bin/zsh
 NPM := npm
 VENDOR_DIR = assets/vendor/
-JEKYLL := jekyll
+JEKYLL := bundle exec jekyll
 
 PROJECT_DEPS := package.json
 
