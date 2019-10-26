@@ -19,8 +19,8 @@
   "homepage": "https://github.com/laura-is-here/tiffany-hooton-therapy#readme",
   "dependencies": {
     "autoprefixer": "^9.6.5",
-    "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
     "popper.js": "^1.15.0",
     "postcss-cli": "^6.1.3"
   },

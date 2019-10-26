@@ -1,4 +1,4 @@
-SHELL := /bin/zsh
+SHELL := /bin/bash
 NPM := npm
 VENDOR_DIR = assets/vendor/
 JEKYLL := bundle exec jekyll
@@ -25,10 +25,8 @@ update: $(PROJECT_DEPS)
 
 include-npm-deps:
 	mkdir -p $(VENDOR_DIR)
-	cp node_modules/jquery/dist/jquery.min.js $(VENDOR_DIR)
-	cp node_modules/popper.js/dist/umd/popper.min.js $(VENDOR_DIR)
-	cp node_modules/bootstrap/dist/js/bootstrap.min.js $(VENDOR_DIR)
 	cp node_modules/@fortawesome/fontawesome-free/js/all.js $(VENDOR_DIR)
+	cp node_modules/normalize.css/normalize.css $(VENDOR_DIR)
 
 build: include-npm-deps
 	$(JEKYLL) build
