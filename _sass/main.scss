@@ -486,6 +486,11 @@ a {
         border: none;
     }
 }
+.right {
+    float: right;
+    margin-left: 0.75em;
+    max-width: 20vmax;
+}
 .border-bottom {
     border-bottom: 0.15em solid var(--main-color);
 }
