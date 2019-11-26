@@ -1,14 +1,14 @@
 <nav class="navbar "  id="navbar">
-    <button id="menu-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span>Menu</span>
+    <button id="menu-toggler" class="nav-toggle-icon" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div>Menu</div>
         <i class="fas fa-bars"></i>
     </button>
     
     <div class="nav-content" id="navbarSupportedContent">
-        <ul class="nav-links text-left">
-            {% for item in site.data.navigation %}
-            <li class="nav-link{% if page.url == item.link %} active{% endif %}">
-                <a class="nav-link" href="#{{ item.link }}">
+        <ul class="nav-links">
+            {% for item in navigation.items %}
+            <li class="nav-link">
+                <a class="nav-link{% if page.url == item.link %} active{% endif %}" href="{{ item.link }}" {% if item.external == true %}target="_blank" rel="noopener noreferer"{% endif %}>
                     {{ item.name }}{% if page.url == item.link %}<span class="sr-only">(current)</span>{% endif %}
                 </a>
             </li>

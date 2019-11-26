@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "name": "Home",
+            "link": "/",
+            "external": false
+        },
+        {
+            "name": "Services",
+            "link": "/#services",
+            "external": false
+        },
+        {
+            "name": "About Me",
+            "link": "/#about-me",
+            "external": false
+        },
+        {
+            "name": "Partner Perspectives",
+            "link": "/partner-perspectives/",
+            "external": false
+        },
+        {
+            "name": "Contact Me",
+            "link": "/#contact",
+            "external": false 
+        }
+    ]
+}
